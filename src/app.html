@@ -1,0 +1,10 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<lightning-input data-entry name="input1" label="Enter Something (Try Numbers)" onchange={handleChange}>
+		</lightning-input>
+		<lightning-input data-entrys name="input2" label="name Enter Something (Try Numbers)" onchange={handleChange2}>
+		</lightning-input>
+		<lightning-input type="text" label="Show Error If Number Is Entered" pattern="^([^0-9]*)$"
+			message-when-pattern-mismatch="Numbers are not allowed"></lightning-input>
+	</div>
+</template>
